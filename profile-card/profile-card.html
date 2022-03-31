@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Demo live server</title>
+    <style>
+      section {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+
+      h5 {
+        margin-top: 0px;
+      }
+
+      .card {
+        width: 400px;
+        height: 500px;
+        background: black;
+        border-radius: 10%;
+        overflow: hidden;
+      }
+
+      .card .background-img {
+        width: 100%;
+      }
+
+      .card .card-profile-top {
+        display: flex;
+        margin-top: -60px;
+        justify-content: center;
+      }
+
+      .card .avatar {
+        width: 100px;
+        height: 100px;
+        border: solid 2px white;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .card .profile-img {
+        width: 100%;
+      }
+
+      .card .card-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .skill {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      span {
+        background: url("./img/colombia.png") center/cover no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 3px;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <img
+          class="background-img"
+          src="https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="space"
+        />
+        <div class="card-profile-top">
+          <div class="avatar">
+            <img
+              class="profile-img"
+              src="https://images.pexels.com/photos/2811087/pexels-photo-2811087.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="profile-pic"
+            />
+          </div>
+        </div>
+        <div class="card-profile">
+          <h3>Ana Valeria Mozo Moreno</h3>
+          <h5 class="skill"><span></span>Java Developer</h5>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
