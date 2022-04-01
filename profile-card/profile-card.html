@@ -11,29 +11,45 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap"
+      rel="stylesheet"
+    />
     <title>Demo live server</title>
     <style>
+      body {
+        background: black;
+      }
+
       section {
         font-family: "Montserrat", sans-serif;
         color: white;
         display: flex;
         justify-content: center;
-      }
-
-      h5 {
-        margin-top: 0px;
+        background: black;
       }
 
       .card {
+        margin-top: 100px;
         width: 400px;
         height: 500px;
         background: black;
         border-radius: 10%;
         overflow: hidden;
+        box-shadow: 0px 0px 30px 15px palevioletred;
       }
 
       .card .background-img {
         width: 100%;
+      }
+
+      .card .quote {
+        position: absolute;
+        font-family: "BIZ UDPMincho", serif;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0px 2px 25px white;
       }
 
       .card .card-profile-top {
@@ -42,16 +58,12 @@
         justify-content: center;
       }
 
-      .card .avatar {
+      .card .card-profile-top .avatar {
         width: 100px;
         height: 100px;
         border: solid 2px white;
         border-radius: 50%;
         overflow: hidden;
-      }
-
-      .card .profile-img {
-        width: 100%;
       }
 
       .card .card-profile {
@@ -61,16 +73,44 @@
         align-items: center;
       }
 
-      .skill {
+      .card .card-profile .skill {
         display: flex;
         justify-content: space-between;
+        margin-top: 0px;
       }
 
-      span {
+      .card .card-profile .skill .span-col {
         background: url("./img/colombia.png") center/cover no-repeat;
         width: 16px;
         height: 16px;
-        margin-right: 3px;
+        margin-right: 5px;
+        align-self: center;
+      }
+
+      .card .social-media {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+
+      .card .social-media .span-ins {
+        background: url("./img/inst.png") center/cover no-repeat;
+        width: 40px;
+        height: 40px;
+        align-self: center;
+      }
+
+      .card .social-media .span-linked {
+        background: url("./img/linkedin.png") center/cover no-repeat;
+        width: 40px;
+        height: 40px;
+        align-self: center;
+      }
+
+      .card .social-media .span-git {
+        background: url("./img/git.png") center/cover no-repeat;
+        width: 40px;
+        height: 40px;
         align-self: center;
       }
     </style>
@@ -78,15 +118,18 @@
   <body>
     <section>
       <div class="card">
-        <img
-          class="background-img"
-          src="https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          alt="space"
-        />
+        <div id="top">
+          <img
+            class="background-img"
+            src="https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="space"
+          />
+          <h5 class="quote">It is not enough for code to work</h5>
+        </div>
         <div class="card-profile-top">
           <div class="avatar">
             <img
-              class="profile-img"
+              class="background-img"
               src="https://images.pexels.com/photos/2811087/pexels-photo-2811087.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt="profile-pic"
             />
@@ -94,7 +137,14 @@
         </div>
         <div class="card-profile">
           <h3>Ana Valeria Mozo Moreno</h3>
-          <h5 class="skill"><span></span>Java Developer</h5>
+          <h5 class="skill">
+            <span class="span-col"></span>Software Developer
+          </h5>
+        </div>
+        <div class="social-media">
+          <span class="span-ins"></span>
+          <span class="span-linked"></span>
+          <span class="span-git"></span>
         </div>
       </div>
     </section>
